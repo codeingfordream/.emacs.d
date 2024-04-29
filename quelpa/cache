@@ -1,0 +1,1 @@
+((highlight-global :fetcher github :repo "glen-dai/highlight-global") (quelpa-use-package :fetcher git :url "https://github.com/quelpa/quelpa-use-package.git"))

@@ -1,0 +1,33 @@
+* DONE head1
+** WAITING head2
+- State "WAITING"    from              [2024-01-02 Tue 00:24] \\
+  there is a meeting
+
+;;agenda
+* TODO [#A] Daily routine [0%]                                  :learn:emacs:
+DEADLINE: <2024-01-02 Tue 21:00> SCHEDULED: <2024-01-02 Sun 08:00 +1d>
+:PROPERTIES:
+:LAST_REPEAT: [2024-01-10 Tue 00:50]
+:RESET_CHECK_BOXES: t
+:Effort:   00:60
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2024-01-02 Tue 00:50]
+- State "DONE"       from              [2024-01-02 Tue 00:50]  :emacs:
+- State "DONE"       from              [2024-01-02 Tue 00:48]
+- State "DONE"       from              [2024-01-02 Tue 00:45]
+- State "DONE"       from              [2024-01-02 Tue 00:38]
+:END:
+  - [ ] leetcode
+  - [ ] exercise
+  - [ ] coding
+* Workspace
+
+** TODO [#B] Learn Emacs                                              :emacs:
+SCHEDULED: <2024-01-02 Tue 22:00>
+:PROPERTIES:
+:Effort:   00:30
+:END:
+  
+ [2024-01-02 Tue 01:34]
+

@@ -1,0 +1,120 @@
+;;在文件最开头添加的这个 文件作用域的变量设置，设置变量的绑定方式
+;; -*- lexical-binding: t -*-
+(global-display-line-numbers-mode 1)
+(setq inhibit-startup-screen 1)
+;;(server-mode 1)
+(+ 2 2 2 2)
+(+ 2 (* 3 4))
+(setq tab-always-indent 'complete)
+;;(icomplete-mode t)
+
+(setq name "guolong")
+(message name)
+
+(defun func()
+  (interactive)
+  (message "hello,%s" name))
+
+(func)
+(global-set-key (kbd "<f1>") 'func)
+
+(electric-pair-mode t)
+
+(toggle-frame-maximized)
+
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+
+(scroll-bar-mode -1)
+
+(setq cursor-type 'bar)
+
+;;快速打开配置文件
+(defun open-init-file()
+  (interactive)
+  (find-file "~/.emacs.d/init.el"))
+
+;;这一行代码，将函数 open-init-file 绑定到 <f2> 键上
+(global-set-key (kbd "<f2>") 'open-init-file)
+
+(global-company-mode 1)
+
+(global-set-key (kbd "C-h C-f") 'find-function)
+(global-set-key (kbd "C-h C-v") 'find-variable)
+(global-set-key (kbd "C-h C-k") 'find-function-on-key)
+
+(setq company-minimum-prefix-length 1)
+
+(setq company-idle-delay 0)
+
+(require 'init-packages)
+;;(require 'package)
+;;(setq package-archives '(("gnu-tuna"    .  "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+;;		   ("melpa-tuna"  .  "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+;;(package-initialize)
+
+;;防止反复调用 package-refresh-contents 会影响加载速度
+;;(when (not package-archive-contents)
+;;  (package-refresh-contents))
+
+;;modeline上显示我的所有的按键和执行的命令
+(package-install 'keycast)
+(keycast-mode-line-mode t)
+
+;;让mini-buffer更具有交互性
+(package-install 'vertico)
+(vertico-mode t)
+
+;;在M-x查找函数是可以进行无序查找,提高emacs的可用性
+(package-install 'orderless)
+(setq completion-styles '(orderless))
+
+;;将M-x查找的函数的命令注释显示在函数后面.
+(package-install 'marginalia)
+(marginalia-mode t)
+
+
+;;目前觉得这个插件不太用得到,可能还没有到哪个层次
+(package-install 'embark)
+(global-set-key (kbd "C-i") 'embark-act)
+(setq prefix-help-command 'embark-prefix-help-command)
+
+(package-install 'consult)
+;;显示关键字列表
+(global-set-key (kbd "C-s") 'consult-line)
+;;差早函数列表
+(global-set-key (kbd "M-s i") 'consult-imenu)
+
+(show-paren-mode t)
+;;去除备份文件
+(setq make-backup-files nil)
+
+;;打开最近的文件
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-item 10)
+;;用consult-buffer来打开最近文件
+(global-set-key (kbd "C-x b") 'consult-buffer)
+
+;;删除选中的文字
+(delete-selection-mode 1)
+
+;;(package-install 'embark-consult)
+;;没什么用,没弄明白,导出的buffer不可写,embark-export-write没有
+(define-key minibuffer-local-map (kbd "C-c C-m") 'embark-export)
+
+;;高亮当前行
+(global-hl-line-mode 1)
+
+;;安装主题
+;;(package-install 'monokai-theme)
+;;(load-theme 'monokai 1)
+
+(package-install 'doom-themes)
+(load-theme 'doom-one 1)
+
+(package-install 'magit)
+
+(setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
+(load custom-file 'no-error 'no-message)
+
