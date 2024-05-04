@@ -1,9 +1,14 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("/home/dream/.emacs.d/lisp/init-tools.el" . 3069)
+(("/home/dream/.emacs.d/lisp/init-tools.el" . 3013)
+ ("/home/dream/.emacs.d/lisp/init-window.el" . 1846)
+ ("/home/dream/.emacs.d/custom.el" . 478)
+ ("/home/dream/.emacs.d/lisp/init-basic.el" . 268)
+ ("/home/dream/.emacs.d/lisp/init-completion.el" . 439)
+ ("/home/dream/.emacs.d/lisp/init-keybindings.el" . 436)
+ ("/home/dream/blog/all-blog.org" . 191)
+ ("/home/dream/.emacs.d/gtd.org" . 768)
  ("/home/dream/.emacs.d/lisp/init-org.el" . 2283)
- ("/home/dream/.emacs.d/lisp/init-basic.el" . 1121)
  ("/home/dream/.emacs.d/lisp/init-packages.el" . 1194)
- ("/home/dream/blog/all-blog.org" . 746)
  ("/home/dream/.emacs.d/lisp/"
   (dired-filename . "/home/dream/.emacs.d/lisp/init-org.el"))
  ("/usr/local/share/emacs/29.1/lisp/progmodes/elisp-mode.el.gz" . 94846)
@@ -13,5 +18,4 @@
  ("/home/dream/blog/content/"
   (dired-filename . "/home/dream/blog/content/post"))
  ("/home/dream/.emacs.d/init.el" . 202)
- ("/home/dream/.emacs.d/lisp/init-window.el" . 2346)
  ("/home/dream/.emacs.d/lisp/init-ui.el" . 179))

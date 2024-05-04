@@ -23,11 +23,18 @@ DEADLINE: <2024-01-02 Tue 21:00> SCHEDULED: <2024-01-02 Sun 08:00 +1d>
   - [ ] coding
 * Workspace
 
-** TODO [#B] Learn Emacs                                              :emacs:
-SCHEDULED: <2024-01-02 Tue 22:00>
+** DONE [#B] Learn Emacs                                              :emacs:
+CLOSED: [2024-05-03 Fri 02:08] SCHEDULED: <2024-01-02 Tue 22:00>
 :PROPERTIES:
 :Effort:   00:30
 :END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 02:08]
+:END:
   
  [2024-01-02 Tue 01:34]
+
+** TODO [#B]去要工资
+  
+ [2024-05-03 Fri 02:05]
 

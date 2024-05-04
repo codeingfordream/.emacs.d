@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/blog/all-blog.org")
- (front-context-string . "** TODO my-secon")
- (rear-context-string . "ne3\n**** title3\n")
- (position . 468)
- (last-modified 26158 46444 140618 266000))
+ (filename . "~/.emacs.d/gtd.org")
+ (front-context-string . "** TODO [#B]去要工资")
+ (rear-context-string . "-02 Tue 01:34]\n\n")
+ (position . 944)
+ (last-modified 26163 54807 681705 492000))
 )
